@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="wrapper">
+          <div class="title">
+            <img src="./assets/odin-lined.png" alt="odin" />
+            <h1>ODIN</h1>
+          </div>
+          <p class="credit">
+            Photo by
+            <a
+              href="https://unsplash.com/@xteemu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Teemu Paananen</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/photo-of-green-fern-plant-OOE4xAnBhKo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="content">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.<br />Sign
+            up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form id="sign-up-form">
+          <div class="shadow">
+            <div class="form-wrapper">
+              <h2>Let's do this!</h2>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="first-name">first name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">last name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">email</label>
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone-number">phone number</label>
+                  <input
+                    class="input"
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">password</label>
+                  <input
+                    class="input"
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                  <span class="input-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="confirm-password">confirm password</label>
+                  <input
+                    class="input"
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn" type="submit">Create Account</button>
+            <p>
+              Already have an accoutn? <a href="#" class="text-btn">Log in</a>
+            </p>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
